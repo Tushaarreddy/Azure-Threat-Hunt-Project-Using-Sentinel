@@ -1,46 +1,36 @@
-# AIT670- George Mason University: Cloud Computing Security
-AIT 670 George Mason University: Improving Cloud Security Posture With Azure Sentinel: A Real Time Threat Detection Solution
+# Improving Cloud Security Posture With Azure Sentinel: A Real Time Threat Detection Solution
 
-Folder Structure:
+## KQL Queries
+This folder contains a complete list of KQL (Kusto Query Language) queries used for various security use cases, including:
 
-KQL Queries:
+* Blocked Malicious IP Addresses
+* Blocking User Privileges
+* Infected Virtual Machine Logs
+* Blocking Non-Legitimate Users
+Analysis of Multifactor Authentication (MFA) and Microsoft Entra ID Logs
+**Note:** .kql is not a valid file format for sharing KQL queries. Instead, Azure Sentinel queries are typically stored and shared in plain text files. KQL is an Azure-specific language developed by Microsoft for querying data in Azure Data Explorer (Kusto).
 
-Contains Full List KQL Queries Used for all different Security use cases: Blocked Malicious IP Addresses, Blocking User Privileges, Infected Virtual Machine Logs, Blocking Non-
-Legitimate Users, and Analysis of Multifactor Authentication and MSFT Entra ID Logs.
+## Data Files
+This folder includes:
 
-Note: .kql is not a valid file format for sharing KQL queries. Azure Sentinel queries are typically shared and stored in plain text files and KQL (Kusto Query Language) is primarily an Azure-specific language. It was developed by Microsoft for querying data in Azure Data Explorer (Kusto)
+* Power BI Visualizations (PDF Format): A full extract of all Power BI visualizations used in the project.
+* Security Log Data Files: A collection of CSV and JSON files used to load security logs into Azure Sentinel.
 
-Data Files:
+## PowerShell Scripts
+This folder contains:
 
-Full Extract of all Power BI Visualizations (PDF Format) used in Powerbi to work with visulization types
+* Script to Load Data into Azure Log Analytics Workspace: The script is responsible for transferring data into Azure Log Analytics Workspace, which is then pushed into Azure Sentinel. (Adjust the JSON data as needed.)
+* CSV to JSON Conversion Script: A script used to convert CSV files into JSON format to ensure compatibility with Microsoft Sentinel.
+**Note:**
 
-Full List of of CSV and Json Files Used to load the security log data into Azure Sentinel
+* JSON (JavaScript Object Notation) is a lightweight data format that uses key-value pairs to represent structured data.
+* CSV (Comma-Separated Values) is a text-based format where data is organized in rows and columns, commonly used in spreadsheets.
+* Converting CSV to JSON enables easier data ingestion, parsing, and organization within Microsoft Sentinel, allowing for more efficient querying, monitoring, and alerting.
 
-PowerShell Scripts:
+## Project Documentation
+This folder includes key project-related documents:
 
-Full Script Used to Load data to Azure log analytics workspace which is later pushed to Azure Sentinel [Adjust JSON Data as needed]
-
-
-Note: JSON (JavaScript Object Notation) is a lightweight data format that uses key-value pairs to represent structured data while CSV (Comma-Separated Values) is a text-based format where data is organized in rows and columns, used for the spreadsheets. Converting from CSV to JSON allows for easier data ingestion, parsing, and organization when loading into Microsoft Sentinel. This gives us efficient querying, monitoring, and alerting, making data analysis more effective within Azure Cloud Sentinel.
-
-Script used to convert CSV to JSON Format to Load data for Sentinel to Accept
-
-
-
-
-
-Project Related Work Items:
-
-PPTX File: Improving Cloud Security Posture With Azure Sentinel
-
-
-
-
-Project Proposal File
-
-Project Diagram
-
-Final Report Docx
-
-
-   
+* Project Proposal File
+* Project Diagram
+* PPTX Presentation: "Improving Cloud Security Posture with Azure Sentinel"
+* Final Report Docx
